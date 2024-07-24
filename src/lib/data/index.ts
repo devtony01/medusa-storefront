@@ -401,7 +401,7 @@ export const getProductsById = cache(async function ({
   const headers = getMedusaHeaders(["products"])
 
   return medusaClient.products
-    .list({ id: ids, region_id: regionId }, headers)
+    .list({ id: ids, region_id: regionId, expand: "variant.images" }, headers)
     .then(({ products }) => products)
     .catch((err) => {
       console.log(err)

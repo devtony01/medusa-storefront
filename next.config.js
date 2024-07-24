@@ -14,6 +14,12 @@ const nextConfig = withStoreConfig({
         hostname: "localhost",
       },
       {
+        protocol: "http",
+        hostname: "172.17.0.2",
+        port: "9000",
+        pathname: '/medusa/**',
+      },
+      {
         protocol: "https",
         hostname: "medusa-public-images.s3.eu-west-1.amazonaws.com",
       },

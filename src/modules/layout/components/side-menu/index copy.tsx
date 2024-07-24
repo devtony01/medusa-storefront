@@ -27,18 +27,8 @@ const SideMenu = ({ regions }: { regions: Region[] | null }) => {
           {({ open, close }) => (
             <>
               <div className="relative flex h-full">
-                <Popover.Button data-testid="nav-menu-button" className="relative w-10 h-10 [@media(min-width:780px)]:w-12 [@media(min-width:780px)]:h-12 [@media(min-width:1200px)]:hidden flex items-center transition-all ease-out duration-200 focus:outline-none focus-visible:outline-[#205ecc_auto_1px] hover:text-ui-fg-base" aria-label="Open main navigation">
-                    <svg
-                      viewBox="0 0 50 50"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      role="img"
-                    >
-                      <path
-                        d="M16.25 18.625C16.25 18.3125 16.5234 18 16.875 18H33.125C33.4375 18 33.75 18.3125 33.75 18.625C33.75 18.9766 33.4375 19.25 33.125 19.25H16.875C16.5234 19.25 16.25 18.9766 16.25 18.625ZM16.25 24.875C16.25 24.5625 16.5234 24.25 16.875 24.25H33.125C33.4375 24.25 33.75 24.5625 33.75 24.875C33.75 25.2266 33.4375 25.5 33.125 25.5H16.875C16.5234 25.5 16.25 25.2266 16.25 24.875ZM33.125 31.75H16.875C16.5234 31.75 16.25 31.4766 16.25 31.125C16.25 30.8125 16.5234 30.5 16.875 30.5H33.125C33.4375 30.5 33.75 30.8125 33.75 31.125C33.75 31.4766 33.4375 31.75 33.125 31.75Z"
-                        fill="#153A5B"
-                      ></path>
-                    </svg>
+                <Popover.Button data-testid="nav-menu-button" className="relative h-full flex items-center transition-all ease-out duration-200 focus:outline-none hover:text-ui-fg-base">
+                  Menu
                 </Popover.Button>
               </div>
 

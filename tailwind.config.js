@@ -69,6 +69,8 @@ module.exports = {
           "Ubuntu",
           "sans-serif",
         ],
+        value: ['Value', 'sans-serif'],
+        valueBold: ['Value Bold', 'sans-serif'],
       },
       keyframes: {
         ring: {

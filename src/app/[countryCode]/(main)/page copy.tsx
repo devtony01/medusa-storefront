@@ -3,17 +3,9 @@ import { Metadata } from "next"
 
 import { getCollectionsList, getProductsList, getRegion } from "@lib/data"
 import FeaturedProducts from "@modules/home/components/featured-products"
-import Reviews from "@modules/home/components/reviews"
-import Rating from "@modules/home/components/rating"
-import Shop from "@modules/home/components/shop"
-import Infographic from "@modules/home/components/infographic"
 import Hero from "@modules/home/components/hero"
-import Article from "@modules/home/components/article"
-import Magazine from "@modules/home/components/magazine"
-
 import { ProductCollectionWithPreviews } from "types/global"
 import { cache } from "react"
-
 
 export const metadata: Metadata = {
   title: "Medusa Next.js Starter Template",
@@ -76,23 +68,11 @@ export default async function Home({
 
   return (
     <>
-      <div>
-        <main>
-          <Hero />
-          <div className="flex flex-col pl-[clamp(1.6rem,calc(1.6rem+(56)*((100vw-428px)/(1920-428))),5.33333rem)] pr-[clamp(1.6rem,calc(1.6rem+(56)*((100vw-428px)/(1920-428))),5.33333rem)] mt-[40px] bg-[#ffffff] [@media(min-width:780px)]:mt-[80px]">
-            <div className="min-h-[1.33333rem] text-[#153a5b] [@media(min-width:1440px)]:block [@media(min-width:1440px)]:justify-between [@media(min-width:1440px)]:gap-[2.66667rem]">
-              <Rating />
-              <Reviews />
-            </div>
-          </div>
-          <Shop />
-          <Infographic />
-          <ul className="list-none">
+      <Hero />
+      <div className="py-12">
+        <ul className="flex flex-col gap-x-6">
           <FeaturedProducts collections={collections} region={region} />
-          </ul>
-          <Article />
-          {/* <Magazine /> */}
-        </main>
+        </ul>
       </div>
     </>
   )

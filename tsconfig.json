@@ -31,7 +31,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "src/modules/home/components/reviews/index.jsx", "src/app/layout.jsx", "src/modules/home/components/reviews/index.jsx", "src/modules/home/components/featured-products/product-rail/components/product-swiper.tsx"  ],
   "exclude": [
     "node_modules",
     ".next",
