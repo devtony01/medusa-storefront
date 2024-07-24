@@ -27,7 +27,7 @@ const Hero = () => {
                           [@media(min-width:1440px)]:text-[1rem] [@media(min-width:1440px)]:rounded-[100px] [@media(min-width:1440px)]:text-[#153a5b]
                           [@media(min-width:960px)]:min-w-[0] [@media(min-width:960px)]:px-16 [@media(min-width:960px)]:py-4 [@media(min-width:960px)]:text-[1rem]"
                tabIndex={0}>
-                <span className="font-valueBold">See what's new</span>
+                <span className="font-valueBold">See what&apos;s new</span>
                 <span className="btn_icon btn_iconRight [display:inherit] text-[1.6rem] mx-[0rem] -my-[0.26667rem] [@media(min-width:960px)]:text-[1.6rem] -mr-[0.26667rem]">
                   <span color="text.default" className="inline-flex align-middle select-none flex-shrink-0 [font-size:inherit]">
                     <svg
