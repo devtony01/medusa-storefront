@@ -67,10 +67,14 @@ export default async function Home({
 }: {
   params: { countryCode: string }
 }) {
-  const collections = await getCollectionsWithProducts(countryCode)
+  // const collections = await getCollectionsWithProducts(countryCode)
   const region = await getRegion(countryCode)
 
-  if (!collections || !region) {
+  // if (!collections || !region) {
+  //   return null
+  // }
+
+  if (!region) {
     return null
   }
 
@@ -88,7 +92,7 @@ export default async function Home({
           <Shop />
           <Infographic />
           <ul className="list-none">
-          <FeaturedProducts collections={collections} region={region} />
+          <FeaturedProducts collections={[]} region={region} />
           </ul>
           <Article />
           {/* <Magazine /> */}
