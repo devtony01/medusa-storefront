@@ -92,7 +92,7 @@ export default async function Home({
           <Shop />
           <Infographic />
           <ul className="list-none">
-          <FeaturedProducts collections={[]} region={region} />
+          {/* <FeaturedProducts collections={[]} region={region} /> */}
           </ul>
           <Article />
           {/* <Magazine /> */}
